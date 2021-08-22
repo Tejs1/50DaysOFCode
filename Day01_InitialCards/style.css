@@ -20,12 +20,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
-  border-radius: 3rem;
+  border-radius: 2rem;
   color: #fff;
+  cursor: pointer;
   flex: 0.5;
   margin: 0.8rem;
   position: relative;
-  transform: flex 0.7s ease-in;
+  transition: flex 0.7s ease-in;
 }
 
 h3 {
