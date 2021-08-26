@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
   box-sizing: border-box;
-  margin: 0%;
   padding: 0%;
 }
 body {
   font-family: "Lato", sans-serif;
-  background-color: black;
-  color: black;
+  background-color: #8d9dad;
+  color: rgb(0, 0, 0);
   overflow-x: hidden;
-  margin: 0;
   padding: 0%;
   border: 0;
+  margin: 0px;
 }
 .container {
   background-color: whitesmoke;
@@ -35,7 +34,7 @@ img {
   left: -6rem;
 }
 .circle {
-  background-color: tomato;
+  background-color: #9c1f1d;
   height: 11rem;
   width: 11rem;
   border-radius: 50%;
@@ -64,4 +63,55 @@ img {
 .circle button#close {
   left: -60%;
   transform: rotate(90deg);
+}
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+nav {
+  position: fixed;
+  bottom: 3rem;
+  left: 0;
+  z-index: -100;
+}
+nav ul {
+  list-style-type: none;
+  padding-left: 3rem;
+}
+nav ul li {
+  text-transform: uppercase;
+  color: whitesmoke;
+  margin: 30px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+nav ul li + li {
+  margin-left: 1rem;
+  transform: translateX(-150%);
+}
+nav ul li + li + li {
+  margin-left: 2rem;
+  transform: translateX(-200%);
+}
+i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.fas {
+  margin-right: 10px;
+}
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+.content h1 {
+  margin: 0%;
+}
+.content small {
+  color: rgb(0, 77, 77);
+  font-style: italic;
+}
+.content p {
+  color: #333;
+  line-height: 1.5;
 }
