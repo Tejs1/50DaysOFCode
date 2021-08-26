@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: black;
+  color: black;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0%;
+  border: 0;
+}
+.container {
+  background-color: whitesmoke;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  transition-delay: 200ms;
+  width: 100vw;
+  min-height: 100vh;
+}
+.container.show-nav {
+  transform: rotate(-20deg);
+}
