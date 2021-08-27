@@ -92,10 +92,12 @@ nav ul li {
 nav ul li + li {
   margin-left: 1rem;
   transform: translateX(-150%);
+  transition-delay: 0.1s ease;
 }
 nav ul li + li + li {
   margin-left: 2rem;
   transform: translateX(-200%);
+  transition-delay: 0.2s ease;
 }
 i {
   font-size: 20px;
