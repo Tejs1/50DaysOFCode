@@ -41,6 +41,9 @@ img {
   position: relative;
   transition: transform 0.5s linear;
 }
+.container.show-nav .circle {
+  transform: rotate(-60deg);
+}
 .circle button {
   padding: 0.3rem;
   cursor: pointer;
@@ -61,12 +64,15 @@ img {
 }
 
 .circle button#close {
-  left: -60%;
+  padding: 1.5rem;
+  top: 55%;
+  left: 61%;
   transform: rotate(90deg);
+  transform-origin: top left;
 }
 .container.show-nav + nav li {
   transform: translateX(0);
-  transition-delay: 0.3s;
+  transition-delay: 0.5s;
 }
 nav {
   position: fixed;
