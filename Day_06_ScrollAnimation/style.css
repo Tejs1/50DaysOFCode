@@ -1,16 +1,41 @@
-@import url("https://fonts.googleapis.com/css?family=Ubantu&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
 }
 body {
-  font-family: "Ubantu", sans-serif;
+  background-color: antiquewhite;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+h1 {
+  margin: 10px;
+}
+.box {
+  background-color: rgba(0, 165, 165, 0.616);
+  color: azure;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 010px;
+  box-shadow: 2px 4px 5px rgba(44, 19, 19, 0.397);
+  transform: translateX(400%);
+  transition: transform 400ms ease;
+}
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 3rem;
 }
