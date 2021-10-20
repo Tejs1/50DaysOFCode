@@ -4,6 +4,10 @@
   padding: 0%;
 }
 body {
+  background-image: linear-gradient(120deg, rgb(0, 0, 136), black);
+  /* background-image: url("https://orangepix.is/content/images/system/home_cover_1592467932281_1507b2.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Ubantu", sans-serif;
   display: flex;
   flex-direction: column;
@@ -12,4 +16,14 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+button {
+  background-image: linear-gradient(120deg, rgb(7, 0, 73), black);
+  border-radius: 6px;
+  border: none;
+  color: aliceblue;
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
 }
